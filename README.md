@@ -38,7 +38,7 @@
 
 #### Overall green stocks performed better in 2017 than 2018.  Total daily volumes for all stocks were similar in 2017 and 2018, although the differences in total volume from year to year varied for each ticker.  The assumption that there is a strong correlation between total daily volume and percent return was not realized in either 2017 or 2018 for the green stocks dataset.    
 ### Compare exection times of the original and refractored script
-#### The original script required XX seconds to perform.  
+#### The execution time was 0.1640625 seconds to analyze the output using the refactored code in the challenge exercise. The original script required XX seconds to perform the analysis of just the ticker "DQ" using the data for 2017, see Figure 8 below.  The refractored script outputs the data for each ticker in a fraction of a second compared to almost 2 seconds using the original code. Similarly, when the execution time for the 2018 analysis is compared, we find the refactored code running in 0.1484375 seconds compared to 1.xx seconds in the original script.  See the run time for the 2018 analysis for ticker "DQ" in Figure 9.    
 ## Summary
 ### Advantages and disadvantages of refactoring code
 ### How does this apply to refactoring the original script.  
