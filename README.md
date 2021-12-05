@@ -1,11 +1,11 @@
 # Stock-Analysis
 ## Overview of the Project
-### Steve enjoys using the last tool that our team provided to analyze the performance of stock ticker "DQ" and has been able to adivse his parents on this investment.  His parents have inquired about expanading their portfolio and want to know if our team can help.  The purpose of this project was to develop a tool for Steve to analyze the entire stock market in reacent years.  
+#### Steve enjoys using the last tool that our team provided to analyze the performance of stock ticker "DQ" and has been able to adivse his parents on this investment.  His parents have inquired about expanading their portfolio and want to know if our team can help.  The purpose of this project was to develop a tool for Steve to analyze the entire stock market in reacent years.  
 
 ## Results
 ### Evalute the data 
 #### Using the dataset provided we can analyze performance of up to 12 different stocks from January through December in 2017 and 2018.  Instead of creating a seperate tool for each stock type, we will refractor the code to loop through the data once and collect all of the information.  The refractored code will run faster than running the code in Steves QQ Analysis tool. 
-### Prepare the Analysis file
+### Prepare the Analysis using VBA in Microsoft Excel
 #### Locate the green stocks dataset and save the file as VBA_Challenge.xlsm and add a new worksheet.  Title the worksheet 'All Stocks Analysis".  Open the file AllStocksAnalysisReafractored.vbs using the VBA editor and rename in 'AllstocksAnalysisRecfratoredChallenge.vbs'.
 ### Create the ticker index variable and output arrays for the analysis
 #### There are several features in the original subroutine that do not need to be changed.  The code used to calculate the length of time to run can retained.  The start time and end time have been dimensioned and the timer is active in the existing code.  The 'All Stocks Analysis' worksheet has been activated and the code to output the year for all stocks has been udpated to remove the hard coding for a specific year (2018) to the use of the 'yearvalue' variable.  Tickers is dimensioned As String and there are 12 tickers from index 0 to 11 initialized for the tickers array. After activiting the Year value worksheet, the code to analyze all data in the worksheet can be kept from the original script.  
@@ -29,7 +29,16 @@
 ![image](https://user-images.githubusercontent.com/94234511/144733897-38ce04dc-f3ff-45ff-8aeb-5a632d89f9a3.png)
 
 ### Comparison of Green Stock performance in 2017 vs 2018
+#### The formatting used in the original script is helpful in visualizing the data and Steve agreed that we use similar formatting for this project, so no changes to the formatting code were needed.  Save the refactored code to VBA_Challenge.xlsm and click the forward arrow icon in the toolbar to run the subroutine 'AllStocksAnalysisRefactoredChallenge()'.  A window prompt will be visible asking the user "What year would you like to run the analysis on?".  Enter "2017" and press "Ok".  The output populated on the All stocks analysis can be seen in Figure 6 below. 
+![VBA_Challenge_2017](https://user-images.githubusercontent.com/94234511/144734351-a0179be5-9d78-4a7f-bbd2-40eceadcb06a.png)
+### The analysis indicates that all green stocks had a profitable return in 2017 except for "TERP".  The return for "TERP" indicates a -7.2% return, indicating the total endingPrice for this ticker was lower than the total startingPrice during 2017.  Total daily volume for "TERP" (139,402,800) was lower than average (263, 886, 592) in 2017. Of the remaining eleven (11) green stocks, four (4) tickers "DQ", "ENPH", "FSLR", and "SEDG" showed a greater than 100% return, more than doubing in price; while two (2) stocks yielded at least a 50% or greater return.  Stock tickers "AY" and "RUN" showed the lowest profit (<10%) on their returns in 2017.  The total daily volumes were near the average for "RUN" while "AY" had much lower trading volume. Overall, the analysis indicates that green stocks were successful in 2017.
+#### When we repeat the analysis using the data from 2018, the results look much different for investments in the same green stocks compared to 2017.  See the analysis for all green stocks in 2018 in Figure 7 below.  
+![VBA_Challenge_2018](https://user-images.githubusercontent.com/94234511/144735340-187d6d95-7fc7-4e91-b0d6-92595f371482.png)
+#### With the exception of "ENPH" and "RUN" with profitable returns of 80% or better, all tickers showed a negative return in 2018. Returns of -62.6% and -60.5% were calculated usign this method for tickers "DQ" and "JKS" The total daily volume for "ENPH" nearly tripled in 2018 and exceed all other tickers by 70 million shares in that same calendar year. Of the four tickers that doubled in price in 2017, only "ENPH" showed a positive return in both 2017 and 2018.  
+
+#### Overall green stocks performed better in 2017 than 2018.  Total daily volumes for all stocks were similar in 2017 and 2018, although the differences in total volume from year to year varied for each ticker.  The assumption that there is a strong correlation between total daily volume and percent return was not realized in either 2017 or 2018 for the green stocks dataset.    
 ### Compare exection times of the original and refractored script
+#### The original script required XX seconds to perform.  
 ## Summary
 ### Advantages and disadvantages of refactoring code
 ### How does this apply to refactoring the original script.  
